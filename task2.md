@@ -3,10 +3,16 @@ In my understanding, an Order is an action to buy or sell that the market either
 
 The life cycle of an Offer is detailed in the (Executing Offers)[https://docs.mangrove.exchange/developers/contracts/technical-references/taking-and-making-offers/reactive-offer/executing-offers/] page of the documentation. Next, I will explain how the order life cycle operates.
 
-1. 
-2. 
-3. 
-4.
+There is two type of order:
+1. restingOrder
+2. marketOrder
+Mangrove can find the order type by input params in one of following way:
+1. force it to use restingOrder 
+2. use `fillOrKill` as true
+3. use `restingOrderParams` in param
+
+After Order function found the type of order try to create a TX and connect to Mangrove Contract and then if response was ok then start to trigger an event and make response (need to add more details here)
+
 ## Buy and sell parameters
 The volume of base token to buy or sell, and the limit price to accept.
 ```
