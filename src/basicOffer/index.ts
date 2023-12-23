@@ -67,7 +67,7 @@ async function buyOffer(
   const buyResult = await market.buy(
     {
       volume: wants,
-      limitPrice: 1.3,
+      limitPrice: limitPrice,
       fillOrKill: true,
     },
     { gasLimit: 1000000 }
