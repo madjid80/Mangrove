@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --build",
-    "basicOffer": "npm run build & node ./dist/basicOffer/index.js"
+    "basicOffer": "node ./dist/basicOffer/index.js"
   },
   "keywords": [],
   "author": "",
